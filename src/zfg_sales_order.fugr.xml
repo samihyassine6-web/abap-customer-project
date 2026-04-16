@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for Sales Order Details</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_SALES_ORDERTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_SALES_ORDER</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_SALES_ORDER</FUNCNAME>
+     <SHORT_TEXT>Function Module for Sales Order</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>SODATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_ODATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SCREABY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_CREABY</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LT_OUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_OUTPUT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>WRONG_INPUT</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>SODATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Order Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SCREABY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for User Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LT_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Output</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_INPUT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Wrong Input</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
